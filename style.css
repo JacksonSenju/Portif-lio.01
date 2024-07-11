@@ -37,7 +37,7 @@
  }
 
  body * {
-  
+
  font-family: 'inter'sans-serif;
  color: var(--text-color);
 
@@ -93,14 +93,18 @@
  left: 0;
  z-index: 1;
  transform: translateY(-50%);
+ 
  }
 
 .light #switch button{
+
   right: 0;
   left: initial;
+
  }
 
 #switch span {
+
  display: block;  
  width: 64px;
  height: 24px;
