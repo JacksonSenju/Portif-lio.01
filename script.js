@@ -4,16 +4,16 @@ function toggleMode () {
     html.classList.toggle("light")
 
 
-//pegar a tag da img 
+ //pegar a tag da img 
 
-const img = document.querySelector("#profile img")
+ const img = document.querySelector("#profile img")
 
 
  if (html.classList.contains("light")) {
    
 
-//se tiver ligh mode, adicionar imagem light
-img.setAttribute("scr","./assets/avatar-lightJ.png")
+ //se tiver ligh mode, adicionar imagem light
+ img.setAttribute("scr","./assets/avatar-lightJ.png")
  } else{
 
  //se tiver sem light mode, manter a imagem normal
