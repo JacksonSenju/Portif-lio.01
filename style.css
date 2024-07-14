@@ -34,6 +34,7 @@
 body{
 
  background:var(--bg-url) no-repeat top center/cover;
+ height: 100vh;
 }
 
 body * {
@@ -119,7 +120,7 @@ body * {
 
  /*link*/
 
- ul {
+ul {
  list-style: none;
 
  display: flex;
@@ -130,7 +131,7 @@ body * {
 
 }
 
- ul li a {
+ul li a {
  
   display: flex;
   align-items: center;
@@ -155,23 +156,23 @@ body * {
 
  /* pseudo-selector */
 
- ul li a:hover {
+ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 
 }
 
- #social-links{
- display: flex;
- justify-content: center;
+#social-links{
+  display: flex;
+  justify-content: center;
 
 
- padding: 24px 0;
+  padding: 24px 0;
  
- font-size: 40px;
+  font-size: 40px;
 }
 
- #social-links a {
+#social-links a {
 
   display:flex;
   align-items: center;
@@ -184,13 +185,25 @@ body * {
 }
 
 
- #social-links a:hover{
+#social-links a:hover{
  background: var(--highlight-color);
 
 }
 
- footer {
+footer {
  padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+
 }
