@@ -1,24 +1,16 @@
-function toggleMode () {
-
+function toggleMode() {
     const html = document.documentElement
     html.classList.toggle("light")
-
-
- //pegar a tag da img 
-
- const img = document.querySelector("#profile img")
-
-
- if (html.classList.contains("light")) {
-   
-
- //se tiver ligh mode, adicionar imagem light
- img.setAttribute("scr","./assets/avatar-lightJ.png")
- } else{
-
- //se tiver sem light mode, manter a imagem normal
- img.setAttribute("scr","./assets/avatar-dark.png")
-}
-
-
+  
+    // pegar a tag img
+    const img = document.querySelector("#profile img")
+  
+    // substituir a imagem
+    if (html.classList.contains("light")) {
+      // se tiver light mode, adicionar a imagem light
+      img.setAttribute("src", "./assets/avatar-lightJ.png")
+    } else {
+      // set tiver sem light mode, manter a imagem normal
+      img.setAttribute("src", "./assets/avatar-dark.png")
+    }
 }
